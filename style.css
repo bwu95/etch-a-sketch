@@ -1,0 +1,21 @@
+body {
+    display: flex; 
+    justify-content: center; 
+}
+
+.container {
+    display: flex; 
+}
+
+.grid-square {
+    flex: 1; 
+    border-style: solid; 
+    border-color: black;
+    width: 25px; 
+    height: 25px; 
+}
+
+.grid-square:hover {
+    background-color: black;
+}
+
