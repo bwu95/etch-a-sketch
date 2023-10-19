@@ -3,19 +3,42 @@ body {
     justify-content: center; 
 }
 
-.container {
+#settings {
     display: flex; 
+    flex-direction: column; 
+}
+
+#grid-size, 
+#clear-screen {
+    flex: 1; 
+    margin-right: 10px; 
+    border-radius: 6px; 
+}
+
+/*drawing grid */ 
+.container {
+    display: flex;  
+    height: 500px; 
+    width: 500px; 
+    box-shadow: 5px 5px 20px rgb(160, 157, 157);
+    flex-direction: column; 
+}
+
+.row-grid {
+    display: flex; 
+    flex: 1; 
 }
 
 .grid-square {
     flex: 1; 
     border-style: solid; 
     border-color: black;
-    width: 25px; 
-    height: 25px; 
+    align-items: stretch; 
 }
 
 .grid-square:hover {
     background-color: black;
 }
+
+
 
